@@ -1,0 +1,15 @@
+{
+  "name": "sorting-algo-visualization",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build-gh-pages": "parcel build -d 'gh-pages' --public-url 'sorting-algo-visulization' ./src/index.html"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "d3": "^5.9.7",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
