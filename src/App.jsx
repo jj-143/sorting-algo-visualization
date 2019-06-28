@@ -20,11 +20,6 @@ const DRAWERS = [
     value: 'Bar Graph',
     drawer: Drawer.BarGraphDrawer
   },
-  {
-    name: 'Moving History',
-    value: 'Moving History',
-    drawer: Drawer.BarGraphDrawer
-  }
 ]
 
 const SPEED_CONFIG = {
@@ -83,8 +78,11 @@ class App extends React.Component {
   }
 
   onChangeDrawer (selected) {
+    const drawer = new DRAWERS[selected.target.selectedIndex].drawer()
+    drawer.initDrawer(this.state.dataset)
+
     this.setState({
-      drawer: new DRAWERS[selected.target.selectedIndex].drawer()
+      drawer
     })
   }
 
