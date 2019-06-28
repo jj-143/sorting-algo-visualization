@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build-gh-pages": "parcel build -d 'gh-pages' --public-url 'sorting-algo-visualization' ./src/index.html"
+    "build-gh-pages": "parcel build -d 'gh-pages' --public-url '/sorting-algo-visualization' ./src/index.html"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
